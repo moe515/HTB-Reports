@@ -7,14 +7,14 @@
 - **Tags**: Custom Applications, Apache, Reconnaissance, Web Site Structure Discovery, Default Credentials
 
 ## Scanning and Enumeration
-- Ran `nmap -sV -Pn -p- -T4 <IP>` to identify open ports and services.
+- Ran `nmap -sV -Pn -p- -T5 -oA preignition-scan 10.129.116.87` to identify open ports and services.
 - Found **Port 80/tcp** open, running **nginx 1.14.2**.
 - Navigated to the web interface and discovered it’s a login panel.
 
 ## Directory Bruteforcing
 - Used **Gobuster** for directory enumeration:
   ```bash
-  gobuster dir -u http://<IP> -w /usr/share/wordlists/dirb/common.txt -x .php
+  gobuster dir -u http://10.129.116.87 -w /usr/share/wordlists/seclists/Discovery/Web-Content/common.txt -x .php
   ```
 - Discovered page: `admin.php`
 - Status Code: **200 OK**
@@ -35,7 +35,7 @@
 - nmap
 - gobuster
 - web browser
-
+- seclists **-wordlists**
 ## Notes
 - Always test default credentials for admin pages.
 - Gobuster is effective for discovering hidden directories.
