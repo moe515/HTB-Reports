@@ -12,7 +12,7 @@ A collection of hands-on Hack The Box Starting Point reports documenting my meth
 | Fawn | FTP enumeration and access | [View report](Fawn_Report.md) |
 | Dancing | SMB enumeration and file shares | [View report](Dancing_Report.md) |
 | Redeemer | Redis enumeration | [View report](Redeemer-Report.md) |
-| Explosion | RDP enumeration and access | [View report](Exposion-Report.md) |
+| Explosion | RDP enumeration and weak authentication | [View report](Explosion-Report.md) |
 | Preignition | Web enumeration and default credentials | [View report](Preignition_Report.md) |
 
 ## Methodology
